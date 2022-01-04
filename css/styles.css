@@ -38,14 +38,31 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    outline: 2px solid red; 
 }
 
 /*---------------------HEADER---------------------*/
 
+.header-container {
+    display: flex;
+    align-items: center;
+} 
+
+.header-list {
+    display: flex;
+}
+
+.header-connect {
+    margin-left: auto;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 52px;
+}
+
 .header {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
 }
 
 .header-link {
@@ -57,7 +74,17 @@ img {
     color: #212121;
 }
 
-.header-email, .header-tel {
+.header-email  {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-right: 50px;
+} 
+
+.header-tel {
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -73,6 +100,7 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
+    margin-right: 93px;
 }
 .header-title-web {
     color: var(--accent-color);
@@ -97,12 +125,16 @@ img {
     text-transform: uppercase;
     color: var(--first-title-color);
     padding-bottom: 30px;
+    width: 696px;
+    text-align: center;
+    margin-left: 252px;
+    margin-right: 252px;
 }
 
 .solutions {
     background-color: #2F303A;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 .solutions-btn {
     font-family: inherit;
@@ -113,6 +145,13 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--first-title-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    min-height: 50px;
+    margin-right: 500px;
+    margin-left: 500px;
     
 }
 
@@ -126,11 +165,22 @@ img {
 
 /*---------------------ABOUT---------------------*/
 
+ .about-list {
+    display: flex;
+    width: 270px;
+} 
+
+.about-list:not(:last-child) {
+    margin-right: 30px;
+}
 .about {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.about-container {
+    display: flex;
+}
 .about-title {
     font-weight: 700;
     font-size: 14px;
