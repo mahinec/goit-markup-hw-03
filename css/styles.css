@@ -38,7 +38,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red; 
+    
 }
 
 /*---------------------HEADER---------------------*/
@@ -63,6 +63,8 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border: 1px solid #ECECEC;
+    
 }
 
 .header-link {
@@ -200,6 +202,14 @@ img {
 
 /*---------------------AFTER ABOUT---------------------*/
 
+.after-about-list {
+    display: flex;
+}
+
+.after-about-item:not(:last-child) {
+margin-right: 30px ;
+}
+
 .after-about {
     padding-top: 0px;
     padding-bottom: 94px;
@@ -212,13 +222,30 @@ img {
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 50px;
+    text-align: center;
 }
 
 /*---------------------TEAM---------------------*/
 
+.team-card {
+    width: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px
+}
+.team-card:not(:last-child) {
+margin-right: 30px;
+}
+
+.team-list {
+    display: flex;
+}
+
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
 
 .team-title {
@@ -228,6 +255,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .teammate-title {
@@ -238,13 +266,17 @@ img {
     color: var(--second-title-color);
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .teammate-position {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: #757575
+    color: #757575;
+    text-align: center;
+    margin-bottom: 30px;
+    
 }
 
 /*---------------------FOOTER---------------------*/
@@ -262,6 +294,7 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--first-title-color);
+    margin-bottom: 20px;
 }
 
 .footer-title-web {
@@ -279,6 +312,8 @@ img {
     letter-spacing: 0.03em;
     color: var(--first-title-color);
     margin-bottom: 9px;
+    font-style: normal;
+    display: block;
 }
 
 .footer-email, .footer-tel {
@@ -288,6 +323,8 @@ img {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
+    font-style: normal;
+    display: block;
 }
 
 .footer-tel {
@@ -296,6 +333,8 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    display: block;
 }
 
 .footer-addres:hover, 
@@ -308,12 +347,33 @@ img {
 }
 /*---------------------MAIN-PORTFOLIO---------------------*/
 
+.list-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+} 
+
+.nav-btn {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-nav-btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    color: var(--second-title-color);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: transparent;
+    padding: 6px 22px;
+}
+
+.list-btn-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio-nav-btn:hover, .portfolio-nav-btn:focus {
@@ -327,13 +387,37 @@ img {
     cursor: pointer;
 }
 
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+.projects-item {
+    width: calc(100% / 9 - 30);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+/* .projects-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+} */
+
+.projects-item-text {
+    background: var(--first-title-color);
+    border: 1px solid var(--border-card-color);
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE
+}
+
 .projects-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-title-color);
-    margin-top: 20px;
+    
     margin-bottom: 4px;
 }
 
